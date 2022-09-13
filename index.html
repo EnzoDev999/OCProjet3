@@ -4,10 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f80cec01b5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Ohmyfood</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header">
+            <img src="/images/logo/ohmyfood.png" alt="Logo Ohmyfood" class="header__logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="search">
+            <div class="search__bar">
+                <input type="search" placeholder="Paris, Belleville" id="ville" name="ville" class="search__input">
+                <i class="fa-sharp fa-solid fa-location-dot search__barlogo"></i>
+            </div>
+            <h1 class="search__title">Réservez le menu qui vous convient</h1>
+            <p class="search__description">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <input type="button" class="search__button" value="Explorer nos restaurants">
+        </div>
+
+        <aside class="fonctionnement">
+            <h2 class="fonctionnement__title">Fonctionnement</h2>
+            <div class="fonctionnement__box">
+
+                <!-- button 1 -->
+
+                <button class="button">
+                    <span class="button__numero">1</span>
+                    <i class="fa-solid fa-mobile-screen-button button__icon button__icon--black"></i>
+                    <!-- text -->
+                    Choisissez un restaurant
+                </button>
+
+                <!-- button 2 -->
+
+                <button class="button">
+                    <span class="button__numero">2</span>
+                    <i class="fas fa-list-ul button__icon button__icon--black"></i>
+                    <!-- text -->
+                    Composez votre menu
+                </button>
+
+                <!-- button 3 -->
+
+                <button class="button">
+                    <span class="button__numero">3</span>
+                    <i class="fas fa-store button__icon button__icon--black"></i>
+                    <!-- text -->
+                    Dégustez au restaurant
+                </button>
+            </div>
+        </aside>
+
+        <article class="restaurants">
+            <h2 class="restaurants__title">Restaurants</h2>
+            <div class="restaurants__box">
+
+                <!-- Card Resto 1 -->
+
+                <div class="card">
+                    <a href="lienDeLaPage" class="card__link">
+                        <span class="nouveau"></span>
+                        <img src="/images/restaurants/la_palette_du_goût.jpg" alt="photo La palette du goût" class="card__img">
+                        <h3 class="card__title">La palette du goût</h3>
+                        <p class="card__description">Ménilmontant</p>
+                    </a>
+                </div>
+
+                <!-- Card Resto 2 -->
+
+                <div class="card">
+                    <a href="lienDeLaPage" class="card__link">
+                        <span class="nouveau"></span>
+                        <img src="/images/restaurants/la_note_enchantée.jpg" alt="photo La note enchantée" class="card__img">
+                        <h3 class="card__title">La note enchantée</h3>
+                        <p class="card__description">Charonne</p>
+                    </a>
+                </div>
+
+                <!-- Card Resto 3 -->
+
+                <div class="card">
+                    <a href="lienDeLaPage" class="card__link">
+                        <span class="nouveau"></span>
+                        <img src="/images/restaurants/à_la_française.jpg" alt="photo À la française" class="card__img">
+                        <h3 class="card__title">À la française</h3>
+                        <p class="card__description">Cité Rouge</p>
+                    </a>
+                </div>
+
+                <!-- Card Resto 4 -->
+
+                <div class="card">
+                    <a href="lienDeLaPage" class="card__link">
+                        <span class="nouveau"></span>
+                        <img src="/images/restaurants/le_délice_des_sens.jpg" alt="photo Le délice des sens" class="card__img">
+                        <h3 class="card__title">Le délice des sens</h3>
+                        <p class="card__description">Folie-Méricourt</p>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+    </main>
 </body>
 </html>
