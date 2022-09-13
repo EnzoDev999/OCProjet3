@@ -1,0 +1,19 @@
+/* RESTAURANTS SECTIONS */
+
+.restaurants{
+    height: 71rem;
+    background-color: $backgroundcolor;
+
+    &__title{
+        @include roboto;
+        margin: 0;
+        padding: 3rem 0 1.1rem 4.5%;
+        font-size: 1.5rem;
+    }
+
+    &__box{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+}
