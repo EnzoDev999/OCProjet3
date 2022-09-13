@@ -71,22 +71,36 @@
 
                 <div class="card">
                     <a href="lienDeLaPage" class="card__link">
-                        <span class="nouveau"></span>
+                        <span class="card__link--new">Nouveau</span>
                         <img src="/images/restaurants/la_palette_du_goût.jpg" alt="photo La palette du goût" class="card__img">
                         <h3 class="card__title">La palette du goût</h3>
                         <p class="card__description">Ménilmontant</p>
                     </a>
+                    <input type="checkbox" class="card__link--selection" name="like" id="like-la-palette-du-gout">
+                    <label for="like-la-palette-du-gout" class="heart">
+                    <i class="far fa-heart heart--empty" aria-hidden="true"></i>
+                    <span class="heart__filter">
+                        <i class="far fa-heart heart__filter--full"></i>
+                    </span>
+                    </label>
                 </div>
 
                 <!-- Card Resto 2 -->
 
                 <div class="card">
                     <a href="lienDeLaPage" class="card__link">
-                        <span class="nouveau"></span>
+                        <span class="card__link--new">Nouveau</span>
                         <img src="/images/restaurants/la_note_enchantée.jpg" alt="photo La note enchantée" class="card__img">
                         <h3 class="card__title">La note enchantée</h3>
                         <p class="card__description">Charonne</p>
                     </a>
+                    <input type="checkbox" class="card__link--selection" name="like" id="like-la-note-enchantee">
+                    <label for="like-la-note-enchantee" class="heart">
+                    <i class="far fa-heart heart--empty" aria-hidden="true"></i>
+                    <span class="heart__filter">
+                        <i class="far fa-heart heart__filter--full"></i>
+                    </span>
+                    </label>
                 </div>
 
                 <!-- Card Resto 3 -->
@@ -98,6 +112,13 @@
                         <h3 class="card__title">À la française</h3>
                         <p class="card__description">Cité Rouge</p>
                     </a>
+                    <input type="checkbox" class="card__link--selection" name="like" id="like-a-la-francaise">
+                    <label for="like-a-la-francaise" class="heart">
+                    <i class="far fa-heart heart--empty" aria-hidden="true"></i>
+                    <span class="heart__filter">
+                        <i class="far fa-heart heart__filter--full"></i>
+                    </span>
+                    </label>
                 </div>
 
                 <!-- Card Resto 4 -->
@@ -109,10 +130,47 @@
                         <h3 class="card__title">Le délice des sens</h3>
                         <p class="card__description">Folie-Méricourt</p>
                     </a>
+                    <input type="checkbox" class="card__link--selection" name="like" id="like-le-delice-des-sens">
+                    <label for="like-le-delice-des-sens" class="heart">
+                    <i class="far fa-heart heart--empty" aria-hidden="true"></i>
+                    <span class="heart__filter">
+                        <i class="far fa-heart heart__filter--full"></i>
+                    </span>
+                    </label>
                 </div>
-
             </div>
         </article>
     </main>
+
+    <footer class="footer">
+        <h4 class="footer__title">ohmyfood</h4>
+            <ul class="footer__list">
+                <li class="footer__list--element">
+                    <a href="#" class="link">
+                        <i class="fas fa-utensils link__icon" aria-hidden="true"></i>
+                    Proposer un restaurant
+                    </a>
+                </li>
+
+                <li class="footer__list--element">
+                    <a href="#" class="link">
+                        <i class="fas fa-hands-helping link__icon" aria-hidden="true"></i>
+                    Devenir partenaire
+                    </a>
+                </li>
+
+                <li class="footer__list--element">
+                    <a href="#" class="link">
+                    Mentions légales
+                    </a>
+                </li>
+
+                <li class="footer__list--element">
+                    <a href="#" class="link">
+                    Contact
+                    </a>
+                </li>
+            </ul>
+    </footer>
 </body>
 </html>
