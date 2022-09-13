@@ -1,3 +1,6 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/extensions";
 @import "./base/bases";
 @import "./components/boutons";
 @import "./layouts/footer";
@@ -5,6 +8,3 @@
 @import "./layouts/header";
 @import "./layouts/navigation";
 @import "./pages/fonctionnements";
-@import "./utils/extensions";
-@import "./utils/mixins";
-@import "./utils/variables";
