@@ -62,7 +62,7 @@
     box-shadow: 0px 5px 10px 0px $searchbarboxshadow;
     background-color: $white;
     margin: 0 auto 5%;
-    border-radius: 7%;
+    border-radius: 20px;
     overflow: hidden;
 
     &__link{
@@ -84,7 +84,7 @@
 
         &--new{
             @include roboto;
-            width: 23%;
+            width: 70px;
             background-color: $color-tertiary;
             position: absolute;
             right: 12px;
