@@ -3,6 +3,9 @@
 .fonctionnement{
     height: 27rem;
     background: $white;
+    @media screen and (min-width: $desktop) {
+        height: 16rem;
+    }
 
     &__title{
         @include roboto;
@@ -14,6 +17,10 @@
     &__box{
         display: flex;
         flex-flow: row wrap;
+        @media screen and (min-width: $desktop) {
+            flex-flow: unset;
+            justify-content: space-evenly;
+        }
     }
 }
 
@@ -34,6 +41,9 @@
     color: $black;
     box-shadow: 0px 5px 10px 0px $searchbarboxshadow;
     @include roboto;
+    @media screen and (min-width: $desktop) {
+        width: 28%;
+    }
     
     &__numero{
         position: absolute;
