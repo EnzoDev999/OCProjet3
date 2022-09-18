@@ -1,7 +1,7 @@
 /* RESTAURANTS SECTIONS */
 
 .restaurants{
-    height: 67rem;
+    height: 72.5rem;
     background-color: $backgroundcolor;
 
     &__title{
@@ -15,6 +15,6 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
-        height: 70rem;
+        height: 67rem;
     }
 }
