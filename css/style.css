@@ -137,6 +137,11 @@ body {
   border-radius: 20px;
   overflow: hidden;
 }
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 44%;
+  }
+}
 .card__link {
   text-decoration: none;
   color: #000;
@@ -229,6 +234,11 @@ body {
   height: 72.5rem;
   background-color: #FAFAFA;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    height: 38.5rem;
+  }
+}
 .restaurants__title {
   font-family: "roboto", italic;
   margin: 0;
@@ -240,6 +250,11 @@ body {
   flex-flow: row wrap;
   justify-content: space-evenly;
   height: 67rem;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__box {
+    height: 33rem;
+  }
 }
 
 /* FONCTIONNEMENT SECTION */

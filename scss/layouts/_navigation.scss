@@ -3,6 +3,9 @@
 .restaurants{
     height: 72.5rem;
     background-color: $backgroundcolor;
+    @media screen and (min-width: $desktop) {
+        height: 38.5rem;
+    }
 
     &__title{
         @include roboto;
@@ -16,5 +19,8 @@
         flex-flow: row wrap;
         justify-content: space-evenly;
         height: 67rem;
+        @media screen and (min-width: $desktop) {
+            height: 33rem;
+        }
     }
 }
