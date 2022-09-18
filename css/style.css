@@ -235,10 +235,35 @@ body {
   background: #fff;
   text-align: center;
   width: 100%;
+  position: relative;
 }
 .header__logo {
   width: 158px;
   padding-top: 1.25rem;
+}
+.header__title {
+  font-family: "shrikhand", sans-serif;
+  width: 200px;
+  padding: 10px 0;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.header__backindex {
+  position: absolute;
+  top: 23px;
+  left: 2%;
+  text-decoration: none;
+  color: #000;
+}
+.header__backindex:visited {
+  color: #000;
+}
+.header__backindex--empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.3rem;
 }
 
 /* RESTAURANTS SECTIONS */
