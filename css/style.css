@@ -4,6 +4,42 @@
   height: 48px;
 }
 
+.meal--button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+}
+
+/* FORMULAIRE REPAS */
+.meal__starter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border: none;
+}
+
+.meal__starter--choice {
+  width: 93vw;
+  height: 68px;
+  display: flex;
+  transform: translateY(10px);
+}
+
+@keyframes flou {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html, body, h1, h3, p {
   margin: 0;
   padding: 0;
@@ -29,18 +65,43 @@ body {
   color: #fff;
 }
 
+/* ORDER BUTTON */
+.meal--button {
+  height: 50px;
+  width: 185px;
+  display: block;
+  margin: 40px auto 70px;
+  border: none;
+  border-radius: 35px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  box-shadow: 0px 5px 10px 0px #c1c1c1;
+  font-family: "roboto", italic;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: #fff;
+}
+.meal--button:hover {
+  box-shadow: 0px 5px 10px 0px #8e8e8e;
+}
+
 .banner {
   width: 100%;
   height: 13rem;
   position: relative;
 }
 .banner__img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: auto;
+  max-height: 250px;
   object-fit: cover;
+  border-radius: 2px;
+}
+@media screen and (min-width: 900px) {
+  .banner__img {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 .banner__text {
   width: 100%;
@@ -59,6 +120,17 @@ body {
   transform-origin: 100% 50%;
   font-size: 1.7rem;
   text-indent: 6%;
+}
+@media screen and (max-width: 319px) {
+  .banner__text--title {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner__text--title {
+    text-align: center;
+    text-indent: 0;
+  }
 }
 .banner__text--selection {
   display: none;
@@ -262,6 +334,122 @@ body {
   padding: 12px 11px 12px 13px;
   font-size: 1.5rem;
   color: transparent;
+}
+
+/* PAGE RESTAURANT */
+.meal {
+  margin-top: 25px;
+  padding: 0;
+  background-color: #FAFAFA;
+}
+.meal__title {
+  height: 2rem;
+  min-width: 5rem;
+  max-width: 12.5rem;
+  position: relative;
+  left: 5%;
+  margin: 0;
+  padding-top: 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "roboto", italic;
+}
+@media screen and (min-width: 1024px) {
+  .meal__title {
+    width: 80vw;
+    max-width: 80vw;
+    left: 10%;
+  }
+}
+.meal__title--style {
+  display: block;
+  width: 100%;
+  max-width: 6.25rem;
+  height: 2.5px;
+  margin-top: 5px;
+  background-color: #99E2D0;
+  transform-origin: 0% 50%;
+  transform: scaleX(0.5);
+}
+@media screen and (min-width: 1024px) {
+  .meal__title--style {
+    width: 80vw;
+    max-width: 80vw;
+    transform: scaleX(1);
+  }
+}
+.meal__starter {
+  height: 15.5rem;
+  min-height: 15.5rem;
+  margin: 0;
+  padding-top: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .meal__starter {
+    height: 85px;
+    min-height: unset;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .meal__starter--choice {
+    width: 30vw;
+  }
+}
+
+.plate {
+  width: 93vw;
+  height: 68px;
+  display: flex;
+  justify-content: stretch;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px -4px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .plate {
+    height: 85px;
+  }
+}
+.plate__text {
+  min-width: 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-indent: 10px;
+  flex: 1;
+  font-family: "roboto", italic;
+}
+.plate__text__menu {
+  width: 100%;
+  display: block;
+  margin: -10px 0 0 0;
+  font-size: 1rem;
+  font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.plate__text__menu:first-of-type {
+  height: 24px;
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.plate__price {
+  height: 2rem;
+  width: 45px;
+  padding-left: 0;
+  margin: 36px 3px 0 3px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  font-family: "roboto", italic;
+}
+
+.selection {
+  display: none;
 }
 
 /* HEADER */

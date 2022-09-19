@@ -158,3 +158,116 @@
         }
     }
 }
+
+/* PAGE RESTAURANT */
+
+.meal{
+    margin-top: 25px;
+    padding: 0;
+    background-color: $backgroundcolor;
+    &__title{
+        height: 2rem;
+        min-width: 5rem;
+        max-width: 12.5rem;
+        position: relative;
+        left: 5%;
+        margin: 0;
+        padding-top: 2.5rem;
+        font-size: 0.95rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        @include roboto;
+        @media screen and (min-width: $desktop){
+            width: 80vw;
+            max-width: 80vw;
+            left: 10%;
+        }
+        &--style{
+            display: block;
+            width: 100%;
+            max-width: 6.25rem;
+            height: 2.5px;
+            margin-top: 5px;
+            background-color: $color-tertiary;
+            transform-origin: 0% 50%;
+            transform: scaleX(0.5);
+            @media screen and (min-width: $desktop){
+                width: 80vw;   
+                max-width: 80vw; 
+                transform: scaleX(1);       
+            }
+        }
+    }
+
+    &__starter{
+        height: 15.5rem;
+        min-height: 15.5rem;
+        margin: 0;
+        padding-top: 5px;
+        @extend %case;
+        @media screen and (min-width: $desktop){
+            height: 85px;
+            min-height: unset;
+        }
+        &--choice{
+            @extend %choice;
+            @media screen and (min-width: $desktop){
+                width: 30vw;
+            }
+        }
+    }
+}
+
+.plate{
+    width: 93vw;
+    height: 68px;
+    display: flex;
+    justify-content: stretch;
+    border-radius: 20px;
+    background-color: $white;
+    box-shadow: 0px 3px 10px -4px;
+    overflow: hidden;
+    @media screen and (min-width: $desktop){
+        height: 85px;
+    }
+    &__text{
+        min-width: 60%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        text-indent: 10px;
+        flex: 1;
+        @include roboto;
+        &__menu{
+            width: 100%;
+            display: block;
+            margin: -10px 0 0 0;
+            font-size: 1rem;
+            font-weight: 300;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            &:first-of-type{
+                height: 24px;
+                margin-top: 12px;
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__price{
+        height: 2rem;
+        width: 45px;
+        padding-left: 0;
+        margin: 36px 3px 0 3px;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+        @include roboto;
+    }
+}
+
+.selection{
+    display: none;
+}
