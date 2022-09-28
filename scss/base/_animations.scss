@@ -45,3 +45,9 @@
     90%{transform: rotateZ(15deg);}
     100%{transform: rotateZ(0deg);}   
 }
+
+@keyframes card{
+    10%{transform:scale3d(0.975, 0.975, 1);}
+    40%{transform:scale3d(0.975, 0.975, 1);}
+    100%{transform:scale3d(0.99, 0.99, 1);}
+}

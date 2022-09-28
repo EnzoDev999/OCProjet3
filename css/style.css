@@ -130,6 +130,17 @@
     transform: rotateZ(0deg);
   }
 }
+@keyframes card {
+  10% {
+    transform: scale3d(0.975, 0.975, 1);
+  }
+  40% {
+    transform: scale3d(0.975, 0.975, 1);
+  }
+  100% {
+    transform: scale3d(0.99, 0.99, 1);
+  }
+}
 html, body, h1, h3, p {
   margin: 0;
   padding: 0;
@@ -353,6 +364,9 @@ body {
   .card {
     width: 44%;
   }
+}
+.card:hover {
+  animation: card 2s ease-in 0.05s forwards;
 }
 .card__link {
   text-decoration: none;
