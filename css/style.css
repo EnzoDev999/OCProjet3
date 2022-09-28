@@ -4,10 +4,10 @@
   height: 48px;
 }
 
-.meal--button:hover {
+.search__button:hover {
   opacity: 0.9;
   cursor: pointer;
-  animation: mou 0.6s ease-in-out 0.05s 1 forwards;
+  animation: btn 600ms ease-in-out 50ms 1 forwards;
 }
 
 /* FORMULAIRE REPAS */
@@ -40,6 +40,21 @@
     opacity: 1;
   }
 }
+/* RESEARCH BUTTON */
+@keyframes btn {
+  10% {
+    transform: scale3d(0.93, 0.93, 1);
+  }
+  40% {
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 1);
+  }
+  100% {
+    transform: scale3d(0.98, 0.98, 1);
+  }
+}
 html, body, h1, h3, p {
   margin: 0;
   padding: 0;
@@ -63,6 +78,9 @@ body {
   box-shadow: 0px 5px 10px 0px #c1c1c1;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   color: #fff;
+}
+.search__button:hover {
+  box-shadow: 0px 5px 10px 0px #8e8e8e;
 }
 
 /* ORDER BUTTON */
