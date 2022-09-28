@@ -205,7 +205,7 @@ body {
   /* Search Bar */
   /* SEARCH TEXTS */
 }
-@media screen and (min-width: 612px) {
+@media screen and (min-width: 628px) {
   .search {
     height: 20rem;
   }
@@ -235,14 +235,14 @@ body {
 }
 .search__title {
   font-family: "roboto", italic;
-  font-size: 1.5rem;
-  margin: 3rem 3.5rem 1.5rem 3.5rem;
+  font-size: 2rem;
+  margin: 3rem 3.5rem 1.1rem 3.5rem;
   color: #000;
 }
 .search__description {
   font-family: "roboto", italic;
   color: #808080;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   margin: 0 1.3rem 2rem 1.3rem;
 }
 
