@@ -69,5 +69,38 @@
             color: $grey;
             text-indent: 11%;
         }
+        &--purple{
+            width: 14px;
+            position: absolute;
+            bottom: 25px;
+            left: 0px;
+            z-index: -1;
+            margin: 0 7% 0 11%;
+            color: $color-primary;
+            text-indent: 11%;
+            font-size: 1.3rem;
+        }
+    }
+    &:hover .button__icon--black{
+        opacity: 0;
+    }
+    &:hover .button__icon--purple{
+        z-index: 1;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $color-primary;
+        border-radius: 20px;
+        opacity: 0;
+    }
+    &:hover::after{
+        z-index: 1;
+        opacity: 0.1;
     }
 }

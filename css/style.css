@@ -643,5 +643,38 @@ body {
   color: #808080;
   text-indent: 11%;
 }
+.button__icon--purple {
+  width: 14px;
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+  z-index: -1;
+  margin: 0 7% 0 11%;
+  color: #9356DC;
+  text-indent: 11%;
+  font-size: 1.3rem;
+}
+.button:hover .button__icon--black {
+  opacity: 0;
+}
+.button:hover .button__icon--purple {
+  z-index: 1;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #9356DC;
+  border-radius: 20px;
+  opacity: 0;
+}
+.button:hover::after {
+  z-index: 1;
+  opacity: 0.1;
+}
 
 /*# sourceMappingURL=style.css.map */
