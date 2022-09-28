@@ -55,6 +55,42 @@
     transform: scale3d(0.98, 0.98, 1);
   }
 }
+/* FONCTIONNEMENT BUTTON */
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-90deg);
+  }
+  20% {
+    transform: rotate(-40deg);
+  }
+  30% {
+    transform: rotate(180deg);
+  }
+  40% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(540deg);
+  }
+  60% {
+    transform: rotate(720deg);
+  }
+  70% {
+    transform: rotate(780deg);
+  }
+  80% {
+    transform: rotate(690deg);
+  }
+  90% {
+    transform: rotate(730deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
 html, body, h1, h3, p {
   margin: 0;
   padding: 0;
@@ -593,6 +629,9 @@ body {
   padding: 3px 8.5px 2px 6.5px;
   background-color: #9356DC;
   color: #fff;
+}
+.button:hover .button__numero {
+  animation: turn 1.5s linear;
 }
 .button__icon {
   font-size: 1.3rem;

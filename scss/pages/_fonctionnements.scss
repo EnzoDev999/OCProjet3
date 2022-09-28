@@ -55,6 +55,9 @@
         background-color: $color-primary;
         color: $white;
     }
+    &:hover .button__numero{
+        animation: turn 1.5s linear;
+    }
 
     &__icon{
         font-size: 1.3rem;
