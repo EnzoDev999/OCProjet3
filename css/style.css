@@ -91,6 +91,45 @@
     transform: rotate(720deg);
   }
 }
+/* NAVIGATION RESTAURANTS SECTION */
+@keyframes fall {
+  5% {
+    transform: rotateZ(40deg);
+  }
+  10% {
+    transform: rotateZ(110deg);
+  }
+  15% {
+    transform: rotateZ(85deg);
+  }
+  20% {
+    transform: rotateZ(92.5deg);
+  }
+  30% {
+    transform: rotateZ(90deg);
+  }
+  40% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateZ(75deg);
+  }
+  60% {
+    transform: rotateZ(60deg);
+  }
+  70% {
+    transform: rotateZ(45deg);
+  }
+  80% {
+    transform: rotateZ(30deg);
+  }
+  90% {
+    transform: rotateZ(15deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
 html, body, h1, h3, p {
   margin: 0;
   padding: 0;
@@ -362,6 +401,10 @@ body {
   line-height: 50%;
   text-indent: 4%;
   font-size: 1.05rem;
+}
+.card:hover .card__link--new {
+  z-index: 1;
+  animation: fall 2000ms linear 50ms;
 }
 
 /* HEART FONCTION */

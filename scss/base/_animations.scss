@@ -28,3 +28,20 @@
     90%{transform: rotate(730deg);}
     100%{transform: rotate(720deg);}
 }
+
+/* NAVIGATION RESTAURANTS SECTION */
+
+@keyframes fall{
+    5%{transform: rotateZ(40deg);}
+    10%{transform: rotateZ(110deg);}
+    15%{transform: rotateZ(85deg);}
+    20%{transform: rotateZ(92.5deg);}
+    30%{transform: rotateZ(90deg);}
+    40%{transform: rotateZ(90deg);}
+    50%{transform: rotateZ(75deg);}
+    60%{transform: rotateZ(60deg);}
+    70%{transform: rotateZ(45deg);}
+    80%{transform: rotateZ(30deg);}
+    90%{transform: rotateZ(15deg);}
+    100%{transform: rotateZ(0deg);}   
+}

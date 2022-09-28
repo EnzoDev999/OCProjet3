@@ -124,6 +124,10 @@
         text-indent: 4%;
         font-size: 1.05rem;
     }
+    &:hover .card__link--new{
+            z-index: 1;
+            animation: fall 2000ms linear 50ms;
+    }
 }
 
 /* HEART FONCTION */
