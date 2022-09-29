@@ -12,11 +12,19 @@
     }
   }
 
+/* RESTAURANGE PAGE ANIMATION */
+
 @keyframes flou{
     0%{opacity: 0}
     30%{opacity: 0}
     60%{opacity: 0.6}
     100%{opacity: 1}
+}
+
+@keyframes colle{
+    0%{transform: translateY(10px);}
+    50%{transform: translateY(10px);}
+    100%{transform: translateY(0px);}
 }
 
 /* RESEARCH BUTTON */

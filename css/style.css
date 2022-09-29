@@ -11,7 +11,7 @@
 }
 
 /* FORMULAIRE REPAS */
-.meal__starter {
+.meal__dessert, .meal__dish, .meal__starter {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -19,7 +19,7 @@
   border: none;
 }
 
-.meal__starter--choice {
+.meal__dessert--choice, .meal__dish--choice, .meal__starter--choice {
   width: 93vw;
   height: 68px;
   display: flex;
@@ -37,6 +37,7 @@
     transform: translateY(20px);
   }
 }
+/* RESTAURANGE PAGE ANIMATION */
 @keyframes flou {
   0% {
     opacity: 0;
@@ -49,6 +50,17 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes colle {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 /* RESEARCH BUTTON */
@@ -511,6 +523,10 @@ body {
   margin-top: 25px;
   padding: 0;
   background-color: #FAFAFA;
+  animation: flou 2000ms linear 0s forwards;
+  /* STARTER ZONE */
+  /* MAIN DISH ZONE */
+  /* DESSERT ZONE */
 }
 .meal__title {
   height: 2rem;
@@ -554,6 +570,8 @@ body {
   min-height: 15.5rem;
   margin: 0;
   padding-top: 5px;
+  opacity: 0;
+  animation: flou 1300ms linear forwards;
 }
 @media screen and (min-width: 1024px) {
   .meal__starter {
@@ -565,6 +583,67 @@ body {
   .meal__starter--choice {
     width: 30vw;
   }
+}
+.meal__starter--choice:nth-child(1) {
+  animation: colle 1.5s ease-in-out forwards;
+}
+.meal__starter--choice:nth-child(2) {
+  animation: colle 1.5s ease-in-out 0.1s forwards;
+}
+.meal__starter--choice:nth-child(3) {
+  animation: colle 1.5s ease-in-out 0.2s forwards;
+}
+.meal__dish {
+  height: 15.5rem;
+  margin: 0;
+  padding-top: 5px;
+  opacity: 0;
+  animation: flou 1300ms linear forwards;
+}
+@media screen and (min-width: 1024px) {
+  .meal__dish {
+    height: 85px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .meal__dish--choice {
+    width: 30vw;
+  }
+}
+.meal__dish--choice:nth-child(1) {
+  animation: colle 1.5s ease-in-out forwards;
+}
+.meal__dish--choice:nth-child(2) {
+  animation: colle 1.5s ease-in-out 0.1s forwards;
+}
+.meal__dish--choice:nth-child(3) {
+  animation: colle 1.5s ease-in-out 0.2s forwards;
+}
+.meal__dessert {
+  height: 15.5rem;
+  margin: 0;
+  padding-top: 5px;
+  opacity: 0;
+  animation: flou 1300ms linear forwards;
+}
+@media screen and (min-width: 1024px) {
+  .meal__dessert {
+    height: 85px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .meal__dessert--choice {
+    width: 30vw;
+  }
+}
+.meal__dessert--choice:nth-child(1) {
+  animation: colle 1.5s ease-in-out forwards;
+}
+.meal__dessert--choice:nth-child(2) {
+  animation: colle 1.5s ease-in-out 0.1s forwards;
+}
+.meal__dessert--choice:nth-child(3) {
+  animation: colle 1.5s ease-in-out 0.2s forwards;
 }
 
 .plate {

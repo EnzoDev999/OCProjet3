@@ -158,6 +158,7 @@
     margin-top: 25px;
     padding: 0;
     background-color: $backgroundcolor;
+    animation: flou 2000ms linear 0s forwards;
     &__title{
         height: 2rem;
         min-width: 5rem;
@@ -192,12 +193,16 @@
         }
     }
 
+/* STARTER ZONE */
+
     &__starter{
         height: 15.5rem;
         min-height: 15.5rem;
         margin: 0;
         padding-top: 5px;
         @extend %case;
+        opacity: 0;
+        animation: flou 1300ms linear forwards;
         @media screen and (min-width: $desktop){
             height: 85px;
             min-height: unset;
@@ -207,9 +212,76 @@
             @media screen and (min-width: $desktop){
                 width: 30vw;
             }
+            &:nth-child(1){
+                animation: colle 1.5s ease-in-out forwards;
+            }
+            &:nth-child(2){
+                animation: colle 1.5s ease-in-out 0.1s forwards;
+            }
+            &:nth-child(3){
+                animation: colle 1.5s ease-in-out 0.2s forwards;
+            }
         }
     }
-}
+
+/* MAIN DISH ZONE */
+
+    &__dish{
+        height: 15.5rem;
+        @extend %case;
+        margin: 0;
+        padding-top: 5px;
+        opacity: 0;
+        animation: flou 1300ms linear forwards;
+        @media screen and (min-width: $desktop) {
+            height: 85px;
+        }
+        &--choice{
+            @extend %choice;
+            @media screen and (min-width: $desktop){
+                width: 30vw;
+            }
+            &:nth-child(1){
+                animation: colle 1.5s ease-in-out forwards;
+            }
+            &:nth-child(2){
+                animation: colle 1.5s ease-in-out 0.1s forwards;
+            }
+            &:nth-child(3){
+                animation: colle 1.5s ease-in-out 0.2s forwards;
+            }
+        }
+    }
+
+/* DESSERT ZONE */
+
+    &__dessert{
+        height: 15.5rem;
+        @extend %case;
+        margin: 0;
+        padding-top: 5px;
+        opacity: 0;
+        animation: flou 1300ms linear forwards;
+        @media screen and (min-width: $desktop) {
+            height: 85px;
+        }
+        &--choice{
+            @extend %choice;
+            @media screen and (min-width: $desktop){
+                width: 30vw;
+            }
+            &:nth-child(1){
+                animation: colle 1.5s ease-in-out forwards;
+            }
+            &:nth-child(2){
+                animation: colle 1.5s ease-in-out 0.1s forwards;
+            }
+            &:nth-child(3){
+                animation: colle 1.5s ease-in-out 0.2s forwards;
+            }
+        }
+    }
+} 
 
 .plate{
     width: 93vw;
