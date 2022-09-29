@@ -27,6 +27,22 @@
     100%{transform: translateY(0px);}
 }
 
+@keyframes smooth{
+    0%{transform: scaleX(0.5); }
+    20%{transform: scaleX(0.3); }
+    40%{transform: scaleX(0.55); }
+    60%{transform: scaleX(0.42); }
+    80%{transform: scaleX(0.55); }
+    100%{transform: scaleX(0.5); }    
+}
+@media screen and (min-width: $desktop){
+    @keyframes smooth{
+        0%{transform: translateY(0px); }
+        50%{transform: translateY(7.5px); }
+        100%{transform: translateY(0px); }
+    } 
+}
+
 /* RESEARCH BUTTON */
 
 @keyframes btn{
@@ -74,6 +90,7 @@
     40%{transform:scale3d(0.975, 0.975, 1);}
     100%{transform:scale3d(0.99, 0.99, 1);}
 }
+
 
 /* HEART ANIMATION */
 
