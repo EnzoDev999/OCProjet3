@@ -421,32 +421,6 @@ body {
   animation: fall 2000ms linear 50ms;
 }
 
-/* HEART FONCTION */
-.heart {
-  position: absolute;
-  right: 10px;
-  bottom: 20px;
-}
-.heart:hover {
-  cursor: grab;
-}
-.heart--empty {
-  padding: 13px 12.5px 12px 12.8px;
-  font-size: 1.48rem;
-}
-.heart__filter {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.heart__filter--full {
-  position: absolute;
-  opacity: 0;
-  padding: 12px 11px 12px 13px;
-  font-size: 1.5rem;
-  color: transparent;
-}
-
 /* PAGE RESTAURANT */
 .meal {
   margin-top: 25px;
@@ -598,6 +572,35 @@ body {
   top: 0;
   left: 0;
   font-size: 1.3rem;
+}
+
+/* HEART FONCTION */
+.heart {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+.heart:hover {
+  cursor: grab;
+}
+.heart--empty {
+  padding: 13px 12.5px 12px 12.8px;
+  font-size: 1.48rem;
+}
+.heart__filter {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.heart__filter--full {
+  position: absolute;
+  opacity: 0;
+  padding: 12px 11px 12px 13px;
+  font-size: 1.5rem;
+  color: transparent;
+  transform-origin: 50% 50%;
+  transform: scale(0);
+  background: linear-gradient(200deg, #9356DC 35%, #FF79DA 65%);
 }
 
 /* RESTAURANTS SECTIONS */

@@ -133,39 +133,6 @@
     }
 }
 
-/* HEART FONCTION */
-
-.heart{
-    @extend %tap-heart;
-    position: absolute;
-    right: 10px;
-    bottom: 20px;
-
-    &:hover{
-        cursor: grab;
-    }
-
-    &--empty{
-        padding: 13px 12.5px 12px 12.8px;
-        font-size: 1.48rem;
-    }
-
-    &__filter{
-        @extend %tap-heart;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-
-        &--full{
-            position: absolute;
-            opacity: 0;
-            padding: 12px 11px 12px 13px;
-            font-size: 1.5rem;
-            color: transparent;
-        }
-    }
-}
-
 /* PAGE RESTAURANT */
 
 .meal{
