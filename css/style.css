@@ -680,6 +680,10 @@ body {
     width: 28%;
   }
 }
+.button:hover {
+  animation: btn 800ms ease-in 50ms 1 forwards;
+  cursor: pointer;
+}
 .button__numero {
   position: absolute;
   left: -10px;

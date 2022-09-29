@@ -44,7 +44,10 @@
     @media screen and (min-width: $desktop) {
         width: 28%;
     }
-    
+    &:hover{
+        animation: btn 800ms ease-in 50ms 1 forwards;
+        cursor: pointer;
+    }
     &__numero{
         position: absolute;
         left: -10px;
