@@ -298,6 +298,22 @@
     background-color: $white;
     box-shadow: 0px 3px 10px -4px;
     overflow: hidden;
+    &--first{
+        opacity: 0;
+        animation: flou 600ms linear 800ms forwards;
+    }
+    &--second{
+        opacity: 0;
+        animation: flou 600ms linear 900ms forwards;
+    }
+    &--third{
+        opacity: 0;
+        animation: flou 600ms linear 1000ms forwards;
+    }
+    &--fourth{
+        opacity: 0;
+        animation: flou 600ms linear 1100ms forwards;
+    }
     &__text{
         min-width: 60%;
         display: flex;
@@ -334,8 +350,61 @@
         text-align: center;
         @include roboto;
     }
+    &__checked{
+        width: 0;
+        min-width: 0;
+        height: 68px;
+        display: flex;
+        flex: 0;
+        justify-content: center;
+        position: relative;
+        left: 1px;
+        background-color: lighten($color-tertiary, 10%);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transform-origin: 100% 50%;
+        transition: all 400ms linear;
+        &--icon{
+            position: absolute;
+            left: 20px;
+            margin: 24px 0 24px 0;
+            font-size: 1.25rem;
+            color: $white;
+        } 
+    }
+    &:hover > .plate__checked{
+        min-width: 60px;
+    }
 }
 
 .selection{
     display: none;
+
+    @media screen and (max-width: $mobile-tablet) {
+        &:hover + .plate .plate__checked{
+            min-width: 60px;
+            background-color: $color-tertiary; 
+        }
+        &:checked + .plate .plate__checked{
+            min-width: 60px;
+            background-color: $color-tertiary;
+        }
+        &:not(:checked) + .plate .plate__checked{
+            min-width: 0px;
+            background-color: $color-tertiary;
+        }
+        &:checked + .plate .plate__checked--icon{
+            animation: rotation 400ms linear forwards;
+        }
+    }
+
+    @media screen and (min-width: $desktop){
+        &:checked + .plate .plate__checked{
+                min-width: 60px;
+                background-color: $color-tertiary;
+        }
+        &:not(:checked) + .plate:hover .plate__checked--icon{
+                animation: rotation 400ms linear forwards;
+        }
+    }
 }

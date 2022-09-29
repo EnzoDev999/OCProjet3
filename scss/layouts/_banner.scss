@@ -41,6 +41,32 @@
         }
         &--selection{
             display: none;
+            &:checked + .heart .heart--empty{
+                animation: erase 500ms linear forwards;
+            }
+            &:checked + .heart .heart__filter--full{   
+                opacity: 1;
+            }
+            &:checked + .heart .heart__filter--full{
+                z-index: 1;
+                opacity: 1;
+                animation: heart-anim 1800ms linear forwards;
+                
+            }
+            @media screen and (min-width: $desktop){
+                &:hover + .heart .heart--empty{
+                    animation: erase 500ms linear forwards;
+                }
+                &:hover + .heart .heart__filter--full{   
+                    opacity: 1;
+                }
+                &:hover + .heart .heart__filter--full{
+                    z-index: 1;
+                    opacity: 1;
+                    animation: heart-anim 1800ms linear forwards;
+                    
+                }
+            } 
         }
     }
 }
