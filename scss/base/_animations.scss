@@ -1,9 +1,24 @@
+/* LOADER ANIMATION */
+
+@keyframes arrows {
+    0%,
+    100% {
+      color: black;
+      transform: translateY(0);
+    }
+    50% {
+      color: #3AB493;
+      transform: translateY(20px);
+    }
+  }
+
 @keyframes flou{
     0%{opacity: 0}
     30%{opacity: 0}
     60%{opacity: 0.6}
     100%{opacity: 1}
 }
+
 /* RESEARCH BUTTON */
 
 @keyframes btn{
