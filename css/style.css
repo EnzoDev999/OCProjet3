@@ -1,9 +1,17 @@
-/* MIXINS */ /* EXTENSIONS */
+/* MIXINS */ /* HEART */
 .heart__filter, .heart {
   width: 48px;
   height: 48px;
 }
 
+/* HEADER */
+.header__backindex--full, .header__backindex--empty, .header__backindex {
+  width: 18px;
+  height: 20px;
+  padding: 14px 15px 14px 15px;
+}
+
+/* BUTTON */
 .search__button:hover {
   opacity: 0.9;
   cursor: pointer;
@@ -251,6 +259,15 @@
   }
   100% {
     transform: scale3d(1, 1, 1);
+  }
+}
+/* HEADER ANIMATION */
+@keyframes striped {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
   }
 }
 html, body, h1, h3, p {
@@ -759,7 +776,7 @@ body {
 }
 .header__backindex {
   position: absolute;
-  top: 23px;
+  top: 9px;
   left: 2%;
   text-decoration: none;
   color: #000;
@@ -769,9 +786,36 @@ body {
 }
 .header__backindex--empty {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   font-size: 1.3rem;
+}
+@media screen and (min-width: 1024px) {
+  .header__backindex:hover .header__backindex--empty {
+    opacity: 0;
+    transform: translateX(-25px);
+    transition: all 0.3s;
+  }
+}
+.header__backindex--full {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 1.3rem;
+  background: linear-gradient(90deg, #FF79DA 40%, #9356DC 75%);
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  background-position: left;
+  transform-origin: 100% 50%;
+}
+@media screen and (min-width: 1024px) {
+  .header__backindex:hover .header__backindex--full {
+    opacity: 1;
+    animation: striped 0.3s linear;
+  }
 }
 
 /* HEART FONCTION */
@@ -943,16 +987,15 @@ body {
   opacity: 0.1;
 }
 
-.loader {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+/* .loader {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
-
 .arrow {
-  --delay: 0s;
-  animation: arrows 1s var(--delay) infinite ease-in;
-}
+    --delay: 0s;
+    animation: arrows 1s var(--delay) infinite ease-in;
+  } */
 
 /*# sourceMappingURL=style.css.map */

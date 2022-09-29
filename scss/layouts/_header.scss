@@ -19,8 +19,9 @@
         font-weight: 400;
     }
     &__backindex{
+        @extend %tap-arrow;
         position: absolute;
-        top: 23px;
+        top: 9px;
         left: 2%;
         text-decoration: none;
         color: $black;
@@ -28,10 +29,39 @@
             color: $black;
         }
         &--empty{
+            @extend %tap-arrow;
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 0px;
+            left: 0px;
             font-size: 1.3rem;
+        }
+        @media screen and (min-width: $desktop){
+            &:hover .header__backindex--empty{
+                opacity: 0;
+                transform: translateX(-25px);
+                transition: all 0.3s;
+            }
+        }
+        &--full{
+            @extend %tap-arrow;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-size: 1.3rem;
+            background: linear-gradient(90deg, $color-secondary 40%, $color-primary 75%);
+            background-repeat: no-repeat;
+            background-clip: text;
+            -webkit-background-clip: text; 
+            color: transparent;
+            opacity: 0;
+            background-position: left;
+            transform-origin: 100% 50%;
+        }
+        @media screen and (min-width: $desktop){
+            &:hover .header__backindex--full {
+                opacity: 1;
+                animation: striped 0.3s linear;
+            }
         }
     }
 }
