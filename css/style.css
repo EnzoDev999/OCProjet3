@@ -12,7 +12,7 @@
 }
 
 /* BUTTON */
-.search__button:hover {
+.meal--button:hover, .search__button:hover {
   opacity: 0.9;
   cursor: pointer;
   animation: btn 600ms ease-in-out 50ms 1 forwards;
