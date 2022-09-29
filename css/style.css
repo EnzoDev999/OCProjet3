@@ -141,6 +141,62 @@
     transform: scale3d(0.99, 0.99, 1);
   }
 }
+/* HEART ANIMATION */
+@keyframes erase {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-anim {
+  0% {
+    transform: scale3d(0, 0, 1);
+  }
+  33% {
+    transform: scale3d(1, 1, 1);
+  }
+  38% {
+    transform: scale3d(1, 1, 1);
+  }
+  43% {
+    transform: scale3d(1, 1, 1);
+  }
+  48% {
+    transform: scale3d(1, 1, 1);
+  }
+  53% {
+    transform: scale3d(1.4, 1.4, 1);
+  }
+  58% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  63% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  68% {
+    transform: scale3d(1, 1, 1);
+  }
+  73% {
+    transform: scale3d(1, 1, 1);
+  }
+  78% {
+    transform: scale3d(1, 1, 1);
+  }
+  83% {
+    transform: scale3d(1.4, 1.4, 1);
+  }
+  88% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  95% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 html, body, h1, h3, p {
   margin: 0;
   padding: 0;
@@ -383,6 +439,24 @@ body {
 .card__link--selection {
   display: none;
 }
+.card__link--selection:checked + .heart .heart--empty {
+  animation: erase 500ms linear forwards;
+}
+.card__link--selection:checked + .heart .heart__filter--full {
+  opacity: 1;
+  z-index: 1;
+  animation: heart-anim 1800ms linear forwards;
+}
+@media screen and (min-width: 1024px) {
+  .card__link--selection:hover + .heart .heart--empty {
+    animation: erase 500ms linear forwards;
+  }
+  .card__link--selection:hover + .heart .heart__filter--full {
+    opacity: 1;
+    z-index: 1;
+    animation: heart-anim 1800ms linear forwards;
+  }
+}
 .card__link--new {
   font-family: "roboto", italic;
   width: 70px;
@@ -601,6 +675,8 @@ body {
   transform-origin: 50% 50%;
   transform: scale(0);
   background: linear-gradient(200deg, #9356DC 35%, #FF79DA 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* RESTAURANTS SECTIONS */
