@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f80cec01b5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/style.css" type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Ohmyfood</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="header__title">ohmyfood</h1>
+            <a href="/index.html" class="header__backindex">
+                <i class="fas fa-arrow-left header__backindex--empty" aria-hidden="true"></i>
+                <i class="fas fa-arrow-left header__backindex--full" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <article class="banner">
+            <img src="/images/restaurants/la_note_enchantée.jpg" alt="Photo à la française" class="banner__img">
+            <div class="banner__text">
+                <h2 class="banner__text--title">À la française</h2>
+                <input type="checkbox" class="banner__text--selection" name="like" id="like_a_la_francaise">
+                <label for="like_a_la_francaise" class="heart">
+                    <i class="far fa-heart heart--empty" aria-hidden="true"></i>
+                    <span class="heart__filter">
+                        <i class="fas fa-heart heart__filter--full"></i>
+                    </span>
+                </label>
+            </div>
+        </article>
+
+        <form class="meal">
+            <h3 class="meal__title">
+                ENTRÉES
+                <span class="meal__title--style"></span>
+            </h3>
+            <fieldset class="meal__starter">
+
+                <!-- FIRST STARTER -->
+
+                <div class="meal__starter--choice">
+                    <input type="checkbox" name="meal_a_la_francaise" id="starter1" class="selection">
+                    <label for="starter1" class="plate plate--first">
+                        <span class="plate__text">
+                            <span class="plate__text__menu" title="Tartare de poulpe acidulé">Tartare de poulpe acidulé</span>
+                            <span class="plate__text__menu" title="Aux zestes d'orange">Aux zestes d'orange</span>
+                        </span>
+                        <span class="plate__price">25€</span>
+                        <span class="plate__checked">
+                            <i class="fas fa-check-circle plate__checked--icon" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- SECOND STARTER -->
+
+                <div class="meal__starter--choice">
+                    <input type="checkbox" name="meal_a_la_francaise" id="starter2" class="selection">
+                    <label for="starter2" class="plate plate--second">
+                        <span class="plate__text">
+                            <span class="plate__text__menu" title="Velouté de légumes d'antan">Velouté de légumes d'antan</span>
+                            <span class="plate__text__menu" title="Carotte, panais, topinambour">Carotte, panais, topinambour</span>
+                        </span>
+                        <span class="plate__price">35€</span>
+                        <span class="plate__checked">
+                            <i class="fas fa-check-circle plate__checked--icon" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- THIRD STARTER -->
+
+                <div class="meal__starter--choice">
+                    <input type="checkbox" name="meal_a_la_francaise" id="starter3" class="selection">
+                    <label for="starter3" class="plate plate--third">
+                        <span class="plate__text">
+                            <span class="plate__text__menu" title="Soupe à l'oignon">Soupe à l'oignon</span>
+                            <span class="plate__text__menu" title="Revisitée">Revisitée</span>
+                        </span>
+                        <span class="plate__price">20€</span>
+                        <span class="plate__checked">
+                            <i class="fas fa-check-circle plate__checked--icon" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <h3 class="meal__title">
+                Plats
+                <span class="meal__title--style"></span>
+            </h3>
+            <fieldset class="meal__dish">
+
+                <!-- FIRST DISH -->
+
+                <div class="meal__dish--choice">
+                    <input type="checkbox" name="meal_a_la_francaise" id="dish1" class="selection">
+                    <label for="dish1" class="plate plate--first">
+                        <span class="plate__text">
+                            <span class="plate__text__menu" title="Coquilles Saint-Jacques">Coquilles Saint-Jacques</span>
+                            <span class="plate__text__menu" title="Accompagnées d'une purée de panais">Accompagnées d'une purée de panais</span>
+                        </span>
+                        <span class="plate__price">40€</span>
+                        <span class="plate__checked">
+                            <i class="fas fa-check-circle plate__checked--icon" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- SECOND DISH -->
+
+                <div class="meal__dish--choice">
+                    <input type="checkbox" name="meal_a_la_francaise" id="dish2" class="selection">
+                    <label for="dish2" class="plate plate--second">
+                        <span class="plate__text">
+                            <span class="plate__text__menu" title="Magret de canard">Magret de canard</span>
+                            <span class="plate__text__menu" title="Et parmentier de pommes de terre">Et parmentier de pommes de terre</span>
+                        </span>
+                        <span class="plate__price">35€</span>
+                        <span class="plate__checked">
+                            <i class="fas fa-check-circle plate__checked--icon" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- THIRD DISH -->
+
+                <div class="meal__dish--choice">
+                    <input type="checkbox" name="meal_a_la_francaise" id="dish3" class="selection">
+                    <label for="dish3" class="plate plate--third">
+                        <span class="plate__text">
+                            <span class="plate__text__menu" title="Pigeonneau d'Ille-et-Vilaine">Pigeonneau d'Ille-et-Vilaine</span>
+                            <span class="plate__text__menu" title="Sur son lit de gnocchis aux légumes">Sur son lit de gnocchis aux légumes</span>
+                        </span>
+                        <span class="plate__price">44€</span>
+                        <span class="plate__checked">
+                            <i class="fas fa-check-circle plate__checked--icon" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <h3 class="meal__title">
+                Desserts
+                <span class="meal__title--style"></span>
+            </h3>
+            <fieldset class="meal__dessert">
+
+                <!-- FIRST DESSERT -->
+
+                <div class="meal__dessert--choice">
+                    <input type="checkbox" name="meal_a_la_francaise" id="dessert1" class="selection">
+                    <label for="dessert1" class="plate plate--first">
+                        <span class="plate__text">
+                            <span class="plate__text__menu" title="Pétales de violettes glacés">Pétales de violettes glacés</span>
+                            <span class="plate__text__menu" title="Et purée de noisettes">Et purée de noisettes</span>
+                        </span>
+                        <span class="plate__price">18€</span>
+                        <span class="plate__checked">
+                            <i class="fas fa-check-circle plate__checked--icon" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- SECOND DESSERT -->
+
+                <div class="meal__dessert--choice">
+                    <input type="checkbox" name="meal_a_la_francaise" id="dessert2" class="selection">
+                    <label for="dessert2" class="plate plate--second">
+                        <span class="plate__text">
+                            <span class="plate__text__menu" title="Fondant au chocolat">Fondant au chocolat</span>
+                            <span class="plate__text__menu" title="Revisité">Revisité</span>
+                        </span>
+                        <span class="plate__price">35€</span>
+                        <span class="plate__checked">
+                            <i class="fas fa-check-circle plate__checked--icon" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- THIRD DESSERT -->
+
+                <div class="meal__dessert--choice">
+                    <input type="checkbox" name="meal_a_la_francaise" id="dessert3" class="selection">
+                    <label for="dessert3" class="plate plate--third">
+                        <span class="plate__text">
+                            <span class="plate__text__menu" title="Millefeuille croustillant">Millefeuille croustillant</span>
+                            <span class="plate__text__menu" title="Myrtilles et pâte d'amande">Myrtilles et pâte d'amande</span>
+                        </span>
+                        <span class="plate__price">23€</span>
+                        <span class="plate__checked">
+                            <i class="fas fa-check-circle plate__checked--icon" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+            <input type="button" class="meal--button" value="Commander">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <h4 class="footer__title">ohmyfood</h4>
+            <ul class="footer__list">
+                <li class="footer__list--element">
+                    <a href="#" class="link">
+                        <i class="fas fa-utensils link__icon" aria-hidden="true"></i>
+                    Proposer un restaurant
+                    </a>
+                </li>
+
+                <li class="footer__list--element">
+                    <a href="#" class="link">
+                        <i class="fas fa-hands-helping link__icon" aria-hidden="true"></i>
+                    Devenir partenaire
+                    </a>
+                </li>
+
+                <li class="footer__list--element">
+                    <a href="#" class="link">
+                    Mentions légales
+                    </a>
+                </li>
+
+                <li class="footer__list--element">
+                    <a href="#" class="link">
+                    Contact
+                    </a>
+                </li>
+            </ul>
+    </footer>
+</body>
