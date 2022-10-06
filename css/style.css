@@ -669,6 +669,14 @@ body {
     min-height: unset;
   }
 }
+.meal__starter--fourchoice {
+  height: 320px;
+}
+@media screen and (min-width: 1024px) {
+  .meal__starter--fourchoice {
+    height: 170px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .meal__starter--choice {
     width: 30vw;
@@ -813,7 +821,7 @@ body {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   transform-origin: 100% 50%;
-  transition: all 400ms linear;
+  transition: all 600ms linear;
 }
 .plate__checked--icon {
   position: absolute;
@@ -843,7 +851,7 @@ body {
     background-color: #99E2D0;
   }
   .selection:checked + .plate .plate__checked--icon {
-    animation: rotation 400ms linear forwards;
+    animation: rotation 600ms linear forwards;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -852,7 +860,7 @@ body {
     background-color: #99E2D0;
   }
   .selection:not(:checked) + .plate:hover .plate__checked--icon {
-    animation: rotation 400ms linear forwards;
+    animation: rotation 600ms linear forwards;
   }
 }
 

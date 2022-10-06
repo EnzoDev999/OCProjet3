@@ -213,6 +213,12 @@
             height: 85px;
             min-height: unset;
         }
+        &--fourchoice{
+            height: 320px; 
+            @media screen and (min-width: $desktop){
+            height: 170px;
+            }
+        }
         &--choice{
             @extend %choice;
             @media screen and (min-width: $desktop){
@@ -366,7 +372,7 @@
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         transform-origin: 100% 50%;
-        transition: all 400ms linear;
+        transition: all 600ms linear;
         &--icon{
             position: absolute;
             left: 20px;
@@ -397,7 +403,7 @@
             background-color: $color-tertiary;
         }
         &:checked + .plate .plate__checked--icon{
-            animation: rotation 400ms linear forwards;
+            animation: rotation 600ms linear forwards;
         }
     }
 
@@ -407,7 +413,7 @@
                 background-color: $color-tertiary;
         }
         &:not(:checked) + .plate:hover .plate__checked--icon{
-                animation: rotation 400ms linear forwards;
+                animation: rotation 600ms linear forwards;
         }
     }
 }
