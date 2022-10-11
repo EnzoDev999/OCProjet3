@@ -44,9 +44,29 @@
     @media screen and (min-width: $desktop) {
         width: 28%;
     }
+    .fa-solid{
+        margin: 0 7% 0 11%;
+        font-size: 1.3rem;
+    }
+    .fa-list-ul{
+        @extend .fa-solid;
+    }
+    .fa-store{
+        @extend .fa-solid;
+    }
     &:hover{
         animation: btn 800ms ease-in 50ms 1 forwards;
         cursor: pointer;
+        background-color: lighten($color: $color-primary, $amount: 35);
+    }
+    &:hover .fa-solid{
+        color: $color-primary;
+    }
+    &:hover .fa-list-ul{
+        color: $color-primary;
+    }
+    &:hover .fa-store{
+        color: $color-primary;
     }
     &__numero{
         position: absolute;
@@ -62,7 +82,7 @@
         animation: turn 1.5s linear;
     }
 
-    &__icon{
+    /* &__icon{
         font-size: 1.3rem;
 
         &--black{
@@ -71,11 +91,8 @@
             position: relative;
             color: $grey;
             text-indent: 11%;
-            &:hover{
-                color: $color-primary;
-            }
         }
-        /* &--purple{
+         &--purple{
             width: 14px;
             position: absolute;
             bottom: 25px;
@@ -85,9 +102,9 @@
             color: $color-primary;
             text-indent: 11%;
             font-size: 1.3rem;
-        }*/
-    }
-    &:hover .button__icon--black{
+        }
+    } */
+    /* &:hover .button__icon--black{
         opacity: 0;
     }
     &:hover .button__icon--purple{
@@ -108,5 +125,5 @@
     &:hover::after{
         z-index: 1;
         opacity: 0.1;
-    }
+    }*/
 }

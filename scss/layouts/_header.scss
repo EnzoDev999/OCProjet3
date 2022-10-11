@@ -50,6 +50,7 @@
             font-size: 1.3rem;
             background: linear-gradient(90deg, $color-secondary 40%, $color-primary 75%);
             background-repeat: no-repeat;
+            background-clip: text;
             -webkit-background-clip: text; 
             color: transparent;
             opacity: 0;
