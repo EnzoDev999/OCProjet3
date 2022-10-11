@@ -1086,6 +1086,17 @@ body {
 }
 .button__icon {
   font-size: 1.3rem;
+  /* &--purple{
+      width: 14px;
+      position: absolute;
+      bottom: 25px;
+      left: 0px;
+      z-index: -1;
+      margin: 0 7% 0 11%;
+      color: $color-primary;
+      text-indent: 11%;
+      font-size: 1.3rem;
+  }*/
 }
 .button__icon--black {
   width: 14px;
@@ -1094,16 +1105,8 @@ body {
   color: #808080;
   text-indent: 11%;
 }
-.button__icon--purple {
-  width: 14px;
-  position: absolute;
-  bottom: 25px;
-  left: 0px;
-  z-index: -1;
-  margin: 0 7% 0 11%;
+.button__icon--black:hover {
   color: #9356DC;
-  text-indent: 11%;
-  font-size: 1.3rem;
 }
 .button:hover .button__icon--black {
   opacity: 0;

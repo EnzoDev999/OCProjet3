@@ -71,8 +71,11 @@
             position: relative;
             color: $grey;
             text-indent: 11%;
+            &:hover{
+                color: $color-primary;
+            }
         }
-        &--purple{
+        /* &--purple{
             width: 14px;
             position: absolute;
             bottom: 25px;
@@ -82,7 +85,7 @@
             color: $color-primary;
             text-indent: 11%;
             font-size: 1.3rem;
-        }
+        }*/
     }
     &:hover .button__icon--black{
         opacity: 0;
